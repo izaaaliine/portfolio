@@ -19,7 +19,6 @@ body {
 .loupe {
   height: 32px;
   width: 32px;
-
   margin-left: 5px;
 }
 .title {
@@ -93,6 +92,7 @@ body {
   width: 90%;
   margin: auto;
   text-align: center;
+  font-size: 130%;
 }
 .logo {
   margin-top: 20px;
@@ -122,11 +122,6 @@ body {
   align-items: center;
   margin-top: 150px;
 }
-.barrecompétence img {
-  height: 50px;
-  width: 50px;
-}
-
 .htmlCss {
   height: 50px;
   width: 60%;
@@ -138,6 +133,16 @@ body {
   width: 60%;
   background-color: #6b705c;
   border-radius: 50px;
+}
+.imgHtml{
+  height: 50px; width: 50px;
+ margin-left: -12vw;
+ margin-bottom: 8px;
+}
+.imgCss{
+  height: 50px; width: 50px;
+  margin-bottom: 8px;
+  margin-left: 1vw;
 }
 .jsNode {
   height: 50px;
@@ -152,6 +157,16 @@ body {
   background-color: #6b705c;
   border-radius: 50px;
 }
+.imgNode{
+  height: 50px; width: 50px;
+ margin-left: -12vw;
+ margin-bottom: 8px;
+}
+.imgJS{
+  height: 50px; width: 50px;
+  margin-bottom: 8px;
+  margin-left: 1vw;
+}
 .php {
   height: 50px;
   width: 60%;
@@ -164,6 +179,16 @@ body {
   width: 60%;
   background-color: #6b705c;
   border-radius: 50px;
+}
+.imgDocker{
+  height: 50px; width: 50px;
+ margin-left: -12vw;
+ margin-bottom: 8px;
+}
+.imgPhp{
+  height: 50px; width: 50px;
+  margin-bottom: 8px;
+  margin-left: 1vw;
 }
 .figmaGit {
   height: 50px;
@@ -178,18 +203,75 @@ body {
   background-color: #6b705c;
   border-radius: 50px;
 }
+.imgGit{
+ height: 50px; width: 50px;
+ margin-left: -12vw;
+ margin-bottom: 8px;
+}
+.imgFigma{
+  height: 50px; width: 50px;
+  margin-bottom: 8px;
+  margin-left: 1vw;
+}
 /* Page 3 */
 .div3 {
   background-color: #b7b7a4;
   height: 100vh;
   width: 100%;
 }
-
+.projets
+{
+  height: 40vh; width: 100vw;
+  margin-top: 4%;
+  display: flex; 
+  justify-content: space-around;
+}
+.projet1{
+  background-color: #ddbea9;
+  height: 30vh; width: 60vh;
+  border-radius: 10%;
+}
+.projet2{
+  background-color: #ddbea9;
+  height: 30vh; width: 60vh;
+  border-radius: 10%;
+}
+.projet3{
+  background-color: #ddbea9;
+  height: 30vh; width: 60vh;
+  border-radius: 10%;
+}
+.projet4{
+  background-color: #ddbea9;
+  height: 30vh; width: 60vh;
+  border-radius: 10%;
+}
 /* Page 4 */
 .div4 {
   background-color: #ddbea9;
   height: 100vh;
   width: 100%;
+}
+.formulaireContact{
+  height: 80vh;
+  width: 100vw;
+}
+.contactez-moi{
+  height: 70vh; width: 70vw;
+  background-color: #B7B7A4;
+  margin-top: 5%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding:20px;
+  }
+input::placeholder{
+  background-color: #6b705c;
+  border: none;
+  
+}
+input{
+  background-color: #6b705c;
+
 }
 /* Format Téléphone */
 @media screen and (max-width: 767px) {
@@ -200,6 +282,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;  
+    
   }
   .left {
     margin-top: -70px;
@@ -210,6 +293,7 @@ body {
    height: 50vh;
   width: 90%;
   text-align: center;
+  font-size: 100%;
   }
   .logo {
     margin-top: -2px;
@@ -217,20 +301,20 @@ body {
   text-align: center;
   }
   .right {
-  height: 40vh;
-  width: 100vw;
-  margin-top: 45%;
-  background-image: url("../img/macbook.jpg");
-  background-position: center;
-  background-size: cover;
-  aspect-ratio: 0.5;
-  opacity: 0.6;
+    background-image: url("../img/macbook.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+    height: 42vh;
+    width: 100vw;
+  }
   }
 /* Format Tablette */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .navBar2 {
     display: none;
   }
+ 
 }
 
 /* Format Ordinateur */
