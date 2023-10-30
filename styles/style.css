@@ -144,25 +144,25 @@ body {
   margin-bottom: 8px;
   margin-left: 1vw;
 }
-.jsNode {
+.js {
   height: 50px;
   width: 60%;
   background-color: #b7b7a4;
   border-radius: 50px;
   margin-top: 50px;
 }
-.jsNode2 {
+.js2 {
   height: 50px;
   width: 60%;
   background-color: #6b705c;
   border-radius: 50px;
 }
-.imgNode{
-  height: 50px; width: 50px;
- margin-left: -12vw;
- margin-bottom: 8px;
-}
 .imgJS{
+  height: 50px; width: 50px;
+  margin-bottom: 8px;
+  margin-left: -12vw;
+}
+.imgAngular{
   height: 50px; width: 50px;
   margin-bottom: 8px;
   margin-left: 1vw;
@@ -182,10 +182,15 @@ body {
 }
 .imgDocker{
   height: 50px; width: 50px;
- margin-left: -12vw;
+ margin-left: -18vw;
  margin-bottom: 8px;
 }
 .imgPhp{
+  height: 50px; width: 50px;
+  margin-bottom: 8px;
+  margin-left: 1vw;
+}
+.imgSql{
   height: 50px; width: 50px;
   margin-bottom: 8px;
   margin-left: 1vw;
@@ -253,25 +258,57 @@ body {
   width: 100%;
 }
 .formulaireContact{
-  height: 80vh;
-  width: 100vw;
+  background-color: #b7b7a4;
+  height: 75%;
+  min-width: 500px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ border-radius: 20px;
+ margin: auto;
+ margin-top: 8vh;
 }
-.contactez-moi{
-  height: 70vh; width: 70vw;
-  background-color: #B7B7A4;
-  margin-top: 5%;
-  box-sizing: border-box;
-  border-radius: 10px;
-  padding:20px;
-  }
-input::placeholder{
-  background-color: #6b705c;
-  border: none;
-  
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 500px;
+  width: 80%;
 }
-input{
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+label{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #6b705c;
+}
+input, textarea{
   background-color: #6b705c;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  border: solid;
+  border-color: #ddbea9;
+}
 
+input[type="submit"]{
+  transition: ease-in-out .2s;
+  cursor: pointer;
+  background-color: #6b705c;
+  width: 80px; 
+  color: #b7b7a4;
+  border: solid;
+  border-color: #ddbea9;
+}
+input[type="submit"]{
+  transition: ease-in-out .2s;
+  cursor: pointer;
 }
 /* Format Téléphone */
 @media screen and (max-width: 767px) {
@@ -301,12 +338,18 @@ input{
   text-align: center;
   }
   .right {
+    height: 40vh; width: 100vw;
     background-image: url("../img/macbook.jpg");
     background-position: center;
     background-size: cover;
     opacity: 0.6;
-    height: 42vh;
-    width: 100vw;
+    margin: auto;
+  }
+  .title{
+    font-size: 105%;
+  }
+  .htmlCss{
+    transform: rotate(-90deg);
   }
   }
 /* Format Tablette */
