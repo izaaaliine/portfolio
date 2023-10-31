@@ -124,7 +124,7 @@ body {
 }
 .htmlCss {
   height: 50px;
-  width: 60%;
+  width: 70%;
   background-color: #b7b7a4;
   border-radius: 50px;
 }
@@ -146,7 +146,7 @@ body {
 }
 .js {
   height: 50px;
-  width: 60%;
+  width: 70%;
   background-color: #b7b7a4;
   border-radius: 50px;
   margin-top: 50px;
@@ -169,7 +169,7 @@ body {
 }
 .php {
   height: 50px;
-  width: 60%;
+  width: 70%;
   background-color: #b7b7a4;
   border-radius: 50px;
   margin-top: 50px;
@@ -182,7 +182,7 @@ body {
 }
 .imgDocker{
   height: 50px; width: 50px;
- margin-left: -18vw;
+ margin-left: -14vw;
  margin-bottom: 8px;
 }
 .imgPhp{
@@ -197,7 +197,7 @@ body {
 }
 .figmaGit {
   height: 50px;
-  width: 60%;
+  width: 70%;
   background-color: #b7b7a4;
   border-radius: 50px;
   margin-top: 50px;
@@ -348,9 +348,16 @@ input[type="submit"]{
   .title{
     font-size: 105%;
   }
-  .htmlCss{
+  .barrecompétence{
+    display: flex;
+  }
+  .barrecompétence>*{
     transform: rotate(-90deg);
   }
+  .barrecompétence img{
+    transform: rotate(90deg);
+  }
+  
   }
 /* Format Tablette */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
