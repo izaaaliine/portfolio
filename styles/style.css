@@ -123,55 +123,43 @@ a {
   width: 100%;
 }
 
-.barrecompétence {
-  height: 90vh;
+.barreCompetence {
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-.skill1 {
-  height: 50px;
+.skill {
+  height: 7vh;
   width: 50%;
   background-color: #6b705c;
   border-radius: 50px;
+  position: relative;
 }
-.skill2 {
-  height: 40px;
-  width: 70%;
+.skill::before {
+  content: "";
+  position: absolute;
   background-color: #b7b7a4;
+  width: 60%;
+  height: 80%;
   border-radius: 50px;
-  border: 5px solid #6b705c;
+  border: 5px solid#6b705c;
 }
-.imgSkill1 {
-  height: 40px;
-  width: 40px;
-  margin-left: -9vw;
-  margin-bottom: 8px;
-}
-.imgSkill2 {
-  height: 40px;
-  width: 40px;
-  margin-bottom: 8px;
-  margin-left: 1vw;
-}
-.imgSkill3 {
-  height: 40px;
-  width: 40px;
-  margin-left: -12vw;
-  margin-bottom: 8px;
+.barreCompetenceVerticale {
+  display: none;
 }
 
 /* Page 3 */
 .div3 {
   background-color: #b7b7a4;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .projets {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -189,12 +177,14 @@ a {
 }
 /* Page 4 */
 .div4 {
+  height: 100vh;
+  width: 100%;
   background-color: #ddbea9;
   background-image: url("../img/pampa.jpg");
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
+  display: flex;
+  align-items: center;
 }
 .formulaireContact {
   background-color: #b7b7a4;
@@ -288,20 +278,7 @@ input[type="submit"] {
   .title {
     font-size: 105%;
   }
-  .barrecompétence {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 90vh;
-  }
-  .barrecompétence > * {
-    transform: rotate(-90deg);
-  }
-  .skill1 {
-  }
-  .barrecompétence img {
-    transform: rotate(90deg);
-  }
+
   .projets {
     height: 85vh;
     margin-top: 5%;
@@ -315,6 +292,31 @@ input[type="submit"] {
     scroll-snap-align: start;
     width: 80vw;
     height: 30vh;
+  }
+  .barreCompetence {
+    display: none;
+  }
+  .barreCompetenceVerticale {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .skillVerticale {
+    height: 40%;
+    width: 8%;
+    background-color: #6b705c;
+    border-radius: 50px;
+    position: relative;
+  }
+  .skillskillVerticale::before {
+    content: "";
+    position: absolute;
+    background-color: #b7b7a4;
+    width: 60%;
+    height: 80%;
+    border-radius: 50px;
+    border: 5px solid#6b705c;
   }
 }
 /* Format Tablette */
