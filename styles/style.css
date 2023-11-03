@@ -300,7 +300,8 @@ input[type="submit"] {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
   }
   .skillVerticale {
     height: 40%;
@@ -308,15 +309,17 @@ input[type="submit"] {
     background-color: #6b705c;
     border-radius: 50px;
     position: relative;
+    /* transform: rotate(180deg); */
   }
-  .skillskillVerticale::before {
+  .skillVerticale::before {
     content: "";
     position: absolute;
     background-color: #b7b7a4;
-    width: 60%;
-    height: 80%;
+    width: 80%;
+    height: 60%;
     border-radius: 50px;
-    border: 5px solid#6b705c;
+    border: 4px solid #6b705c;
+    transform: translate(0%, 60%);
   }
 }
 /* Format Tablette */
